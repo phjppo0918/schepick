@@ -1,0 +1,9 @@
+
+footer {
+    font-family: 'NEXON Lv1 Gothic OTF';
+}
+#Footerlogo {
+    font-family: 'CookieRunOTF-Black';
+    font-size: 50pt;
+    color: var(--color-dark);
+}
