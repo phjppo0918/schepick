@@ -1,4 +1,6 @@
 #Headerlogo {
     font-family: 'CookieRunOTF-Black';
     font-size: 100pt;
+    color: var(--color-middle);
+    text-align: center;
 }

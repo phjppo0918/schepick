@@ -66,5 +66,6 @@ table {
 }
 
 #wrap {
-
+    width: 100%;
+    background-color: var(--color-dark);
 }
