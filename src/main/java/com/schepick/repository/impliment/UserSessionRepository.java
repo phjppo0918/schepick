@@ -8,7 +8,7 @@ import javax.servlet.http.HttpSession;
 import java.util.Optional;
 
 @Repository
-public class SessionUserRepository implements UserRepository {
+public class UserSessionRepository implements UserRepository {
 
     @Override
     public Optional<User> saveDepart(String depart) {
