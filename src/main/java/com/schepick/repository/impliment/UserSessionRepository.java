@@ -13,12 +13,15 @@ import java.util.Optional;
 
 @Repository
 public class UserSessionRepository implements UserRepository {
-    //@Autowired
-   // private HttpServletRequest request;
-    HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
-    HttpSession httpSession = request.getSession();
+
+    @Autowired
+    private HttpServletRequest request;
+    //HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+    private HttpSession httpSession;
+
     @Override
     public User save(User user) {
+        httpSession = request.getSession();
         httpSession.setAttribute("user", user);
         return user;
     }

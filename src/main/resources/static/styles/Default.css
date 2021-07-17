@@ -68,4 +68,7 @@ table {
 #wrap {
     width: 100%;
     background-color: var(--color-dark);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
