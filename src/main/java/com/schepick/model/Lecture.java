@@ -1,3 +1,4 @@
+/*
 package com.schepick.model;
 
 import com.schepick.model.id.LectureId;
@@ -23,3 +24,4 @@ public class Lecture {
     private String room;
     private short participantsMax;
 }
+*/

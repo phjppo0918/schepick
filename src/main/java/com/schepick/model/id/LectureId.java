@@ -1,3 +1,4 @@
+/*
 package com.schepick.model.id;
 
 import com.schepick.model.Subject;
@@ -19,3 +20,4 @@ public class LectureId implements Serializable {
     @Column(name="divideClass_num")
     private Subject subject;
 }
+*/

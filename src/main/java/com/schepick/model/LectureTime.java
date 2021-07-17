@@ -1,3 +1,4 @@
+/*
 package com.schepick.model;
 
 
@@ -7,3 +8,4 @@ public class LectureTime {
     private byte startTime;
     private byte finishTime;
 }
+*/
