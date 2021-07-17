@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout/DefaultLayout">
+
+<th:block layout:fragment="contentStyle">
+    <link rel="stylesheet" th:href="@{/styles/page/user/User-form.css}" >
+</th:block>
+
+<div layout:fragment="content">
+    <form action="" method="post">
+        <select name="userDepart">
+            <option>IT경영</option>
+            <option>산업경영</option>
+            <option>컴퓨터공학</option>
+            <option>소프트웨어공학</option>
+            <option>게임공학</option>
+            <option>나노광공학</option>
+        </select>
+
+        <input type="radio" name="grade", value="1">
+        <input type="radio" name="grade", value="2">
+        <input type="radio" name="grade", value="3">
+        <input type="radio" name="grade", value="4">
+        <input type="radio" name="grade", value="5">
+
+        <select name="minor">
+            <option>IT경영</option>
+            <option>산업경영</option>
+            <option>컴퓨터공학</option>
+            <option>소프트웨어공학</option>
+            <option>게임공학</option>
+            <option>나노광공학</option>
+        </select>
+
+        <select name="doubleMajor">
+            <option>IT경영</option>
+            <option>산업경영</option>
+            <option>컴퓨터공학</option>
+            <option>소프트웨어공학</option>
+            <option>게임공학</option>
+            <option>나노광공학</option>
+        </select>
+
+        <input type="radio" name="isCosmos" value="false" checked>
+        <input type="radio" name="isCosmos" value="true">
+
+        <input type="submit" value="다음!">
+    </form>
+
+
+</div>
+
+<th:block layout:fragment="contentScript">
+    <script th:src="@{/scripts/page/home.js}"></script>
+</th:block>
+</html>
