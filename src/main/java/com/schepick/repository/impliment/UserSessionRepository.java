@@ -13,13 +13,21 @@ import java.util.Optional;
 
 @Repository
 public class UserSessionRepository implements UserRepository {
-    @Autowired
-    private HttpServletRequest request;
-    //HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+    //@Autowired
+   // private HttpServletRequest request;
+    HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+    HttpSession httpSession = request.getSession();
     @Override
     public User save(User user) {
-        HttpSession httpSession = request.getSession();
         httpSession.setAttribute("user", user);
         return user;
     }
+
+    @Override
+    public Optional<User> findUser() {
+        User user = (User)httpSession.getAttribute("user");
+        return Optional.ofNullable(user);
+    }
+
+
 }

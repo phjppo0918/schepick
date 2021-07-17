@@ -14,7 +14,7 @@ public class UserController {
 
     private final UserService userService;
 
-    private String location = "/page/user";
+    private final String LOCATION = "/page/user";
 
     @Autowired
     public UserController(UserService userService) {
@@ -23,12 +23,12 @@ public class UserController {
 
     @GetMapping("")
     public String userForm() {
-        return location + "/User-form";
+        return LOCATION + "/User-form";
     }
 
     @PostMapping("")
     public String createUser(User form) {
         userService.join(form);
-        return location + "/User-unable-time";
+        return "/page/unable-time/User-unable-time";
     }
 }
