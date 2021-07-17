@@ -2,11 +2,9 @@ package com.schepick.repository;
 
 import com.schepick.model.User;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Optional;
 
 public interface UserRepository {
-    Optional<User> saveDepart(String depart);
-    Optional<User> saveGrade(byte Grade);
-    Optional<User> saveMinorAndDoubleMajor(String minor, String doubleMajor);
-    Optional<User> saveIsCosmos(boolean isCosmos);
+    User save(User user);
 }

@@ -2,32 +2,24 @@ package com.schepick.repository.impliment;
 
 import com.schepick.model.User;
 import com.schepick.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.Optional;
 
 @Repository
 public class UserSessionRepository implements UserRepository {
-
+    @Autowired
+    private HttpServletRequest request;
+    //HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
     @Override
-    public Optional<User> saveDepart(String depart) {
-
-        return Optional.empty();
-    }
-
-    @Override
-    public Optional<User> saveGrade(byte Grade) {
-        return Optional.empty();
-    }
-
-    @Override
-    public Optional<User> saveMinorAndDoubleMajor(String minor, String doubleMajor) {
-        return Optional.empty();
-    }
-
-    @Override
-    public Optional<User> saveIsCosmos(boolean isCosmos) {
-        return Optional.empty();
+    public User save(User user) {
+        HttpSession httpSession = request.getSession();
+        httpSession.setAttribute("user", user);
+        return user;
     }
 }
