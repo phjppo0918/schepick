@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout/DefaultLayout">
+
+<th:block layout:fragment="contentStyle">
+  <link rel="stylesheet" th:href="@{/styles/page/user/User-form.css}" >
+</th:block>
+
+<div layout:fragment="content">
+  <form>
+    월 화 수 목 금
+
+
+  </form>
+</div>
+
+<th:block layout:fragment="contentScript">
+  <script th:src="@{/scripts/page/home.js}"></script>
+</th:block>
+</html>
