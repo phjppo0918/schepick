@@ -27,35 +27,42 @@
                         학과가 어디신가요...?
                     </div>
                     <div class="departSet">
-                        <div class="depart">컴퓨터공학</div>
-                        <div>소프트웨어공학</div>
-                        <div>IT경영</div>
-                        <div>산업경영</div>
-                        <div>게임공학</div>
-                        <div>엔터테인먼트컴퓨팅</div>
-                        <div>기계공학</div>
-                        <div>기계설계공학</div>
-                        <div>메카트로닉스공학</div>
-                        <div>임베디드시스템</div>
-                        <div>산업디자인공학</div>
-                        <div>미디어디자인공학</div>
-                        <div>에너지·전기공학</div>
-                        <div>전자공학</div>
-                        <div>나노반도체공학</div>
-                        <div>신소재공학</div>
-                        <div>생명화학공학</div>
+                        <div class="depart" id="depart0" onclick="selectDepart(this, 0)">컴퓨터공학</div>
+                        <div class="depart" id="depart1" onclick="selectDepart(this, 1)">소프트웨어공학</div>
+                        <div class="depart" id="depart2" onclick="selectDepart(this, 2)">IT경영</div>
+                        <div class="depart" id="depart3" onclick="selectDepart(this, 3)">산업경영</div>
+                        <div class="depart" id="depart4" onclick="selectDepart(this, 4)">게임공학</div>
+                        <div class="depart" id="depart5" onclick="selectDepart(this, 5)">엔터테인먼트컴퓨팅</div>
+                        <div class="depart" id="depart6" onclick="selectDepart(this, 6)">기계공학</div>
+                        <div class="depart" id="depart7" onclick="selectDepart(this, 7)">기계설계공학</div>
+                        <div class="depart" id="depart8" onclick="selectDepart(this, 8)">메카트로닉스공학</div>
+                        <div class="depart" id="depart9" onclick="selectDepart(this, 9)">임베디드시스템</div>
+                        <div class="depart" id="depart10" onclick="selectDepart(this, 10)">산업디자인공학</div>
+                        <div class="depart" id="depart11" onclick="selectDepart(this, 11)">미디어디자인공학</div>
+                        <div class="depart" id="depart12" onclick="selectDepart(this, 12)">에너지·전기공학</div>
+                        <div class="depart" id="depart13" onclick="selectDepart(this, 13)">전자공학</div>
+                        <div class="depart" id="depart14" onclick="selectDepart(this, 14)">나노반도체공학</div>
+                        <div class="depart" id="depart15" onclick="selectDepart(this, 15)">신소재공학</div>
+                        <div class="depart" id="depart16" onclick="selectDepart(this, 16)">생명화학공학</div>
                     </div>
-                    <input type="hidden" name="user-depart" value="">
+                    <input type="hidden" id="inputDepart" name="user-depart" value="">
 
                 </div>
                 <div class="swiper-slide">
                     <div class="question">
                         학년이 어떻게 되세요??
                     </div>
-                    <label> 1학년! <input type="radio" name="grade" , value="1"> </label>
-                    <label> 2학년! <input type="radio" name="grade" , value="2"> </label>
-                    <label> 3학년! <input type="radio" name="grade" , value="3"> </label>
-                    <label> 4학년! <input type="radio" name="grade" , value="4"> </label>
+                    <div class="gradeSet">
+                        <div class="gradeSubSet">
+                            <div class="grade" id="grade1" onclick="selectGrade(this, 1)"> <p>파릇파릇 프레시한</p> <p>1학년!</p> </div>
+                            <div class="grade" id="grade2" onclick="selectGrade(this, 2)"> <p>아직은 놀고싶은</p> <p>2학년!</p> </div>
+                        </div>
+                        <div class="gradeSubSet">
+                            <div class="grade" id="grade3" onclick="selectGrade(this, 3)"> <p>아직은 놀아도 되는(?)</p> <p>3학년!</p> </div>
+                            <div class="grade" id="grade4" onclick="selectGrade(this, 4)"> <p>마음만은 프레시한</p> <p>4학년!</p> </div>
+                        </div>
+                    </div>
+                    <input type="hidden" id="inputGrade" name="user-grade" value="">
                 </div>
                 <div class="swiper-slide">
                     <div class="question">
