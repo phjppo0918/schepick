@@ -1,24 +1,74 @@
 #userFormContentWrap {
     width: 75%;
-    background-color: var(--color-light);
-    height: 800px;
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
 }
+
 #formExplain {
     width: 100%;
-    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center; /* 위아래 기준 중앙정렬 */
+    justify-content: center; /* 좌우 기준 중앙정렬 */
+    /*flex-direction: column;*/
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+
+}
+
+.formExplainText {
+    font-family: 'MaplestoryOTFBold';
+    color: var(--color-yellow);
+    font-size: 25pt;
+    display: flex;
+}
+
+.swiper-container {
+    height: 500px;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
+    align-items: center; /* 위아래 기준 중앙정렬 */
+    justify-content: center; /* 좌우 기준 중앙정렬 */
+    height: 100%;
+    border-width: 0 70px 0 70px;
+    border-color: var(--color-dark);
+    border-style: solid;
+    background-color: var(--color-light);
+    flex-direction: column;
+}
+
+.question {
     font-family: 'NEXON Lv1 Gothic OTF';
     color: var(--color-dark);
-    font-size: 30pt;
-    text-align: center;
+    font-size: 25pt;
 }
-#swiper-slide {
-    text-align:center;
-    display:flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
-    align-items:center; /* 위아래 기준 중앙정렬 */
-    justify-content:center; /* 좌우 기준 중앙정렬 */
-    width: 80%;
-    height: 300px;
-    border-width: 20px solid var(--color-dark);
+
+.swiper-pagination-bullet-active {
+    background: var(--color-dark);
 }
+
+.departSet {
+    display: flex;
+    align-items: center; /* 위아래 기준 중앙정렬 */
+    justify-content: center; /* 좌우 기준 중앙정렬 */
+    /*flex-direction: column;*/
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.depart {
+    display: flex;
+
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--color-yellow);
+    top: 50%;
+}
+

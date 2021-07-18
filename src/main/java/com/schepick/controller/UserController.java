@@ -29,6 +29,6 @@ public class UserController {
     @PostMapping("")
     public String createUser(User form) {
         userService.join(form);
-        return "/page/unable-time/User-unable-time";
+        return "/page/unable-time/Unable-time";
     }
 }
