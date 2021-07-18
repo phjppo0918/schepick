@@ -5,6 +5,8 @@ import com.schepick.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class UserService {
 
@@ -20,5 +22,8 @@ public class UserService {
         return user;
     }
 
-
+    public Optional<User> findOne() {
+        Optional<User> user = userRepository.findUser();
+        return user;
+    }
 }
