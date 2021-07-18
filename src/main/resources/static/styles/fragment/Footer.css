@@ -1,9 +1,43 @@
 
 footer {
+    width: 100%;
     font-family: 'NEXON Lv1 Gothic OTF';
+    display: flex;
+    margin-top: 40px;
+}
+.footerContent {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 #Footerlogo {
     font-family: 'CookieRunOTF-Black';
     font-size: 50pt;
     color: var(--color-dark);
+}
+.footerTextWrap {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.footerImageWrap {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.footerText {
+    color: var(--color-middle);
+    display: flex;
+    font-size: 10pt;
+    margin: 10px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.footerImage {
+    display: flex;
+    margin: 10px;
 }
