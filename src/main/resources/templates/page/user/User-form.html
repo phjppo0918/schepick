@@ -126,11 +126,22 @@
                     <div class="question">
                         엇복학중이신가요?
                     </div>
-                    <label> 아니요!<input type="radio" name="isCosmos" value="false" checked> </label>
-                    <label> 네!<input type="radio" name="isCosmos" value="true"> </label>
+                    <div class="cosmosSet">
+                        <div class="cosmos" id="isCosmosFalse" onclick="selectCosmos(this)">아니오!</div>
+                        <div class="cosmos" id="isCosmosTrue" onclick="selectCosmos(this)">예!</div>
+                    </div>
+                    <input type="hidden" id="inputCosmos" name="isCosmos" value="false">
                 </div>
                 <div class="swiper-slide">
-                    <input type="submit" value="다음!">
+                    <div class="question">
+                        <div class="questionText">
+                            준비가 끝났어요!
+                        </div>
+                        <div class="questionText">
+                            이제 시간표를 만들러 가볼까요??
+                        </div>
+                    </div>
+                    <input type="submit" id="submitBtn" value="다음!">
                 </div>
             </div>
 

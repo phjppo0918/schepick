@@ -40,5 +40,21 @@ function selectGrade(element, seq) {
     document.querySelector('#inputGrade').value = seq;
     selectedGrade = seq;
     element.style.backgroundColor = 'var(--color-middle)';
+}
 
+let selectedCosmos = false;
+function selectCosmos(element) {
+    if(element.id=='isCosmosFalse') {
+        selectedCosmos = false;
+        element.style.backgroundColor = 'var(--color-middle)';
+        document.querySelector('#isCosmosTrue')
+            .style.backgroundColor = 'var(--color-light)';
+        document.querySelector('#inputCosmos').value = false;
+    }else {
+        selectedCosmos = true;
+        element.style.backgroundColor = 'var(--color-middle)';
+        document.querySelector('#isCosmosFalse')
+            .style.backgroundColor = 'var(--color-light)';
+        document.querySelector('#inputCosmos').value = true;
+    }
 }
