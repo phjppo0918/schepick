@@ -54,12 +54,16 @@
                     </div>
                     <div class="gradeSet">
                         <div class="gradeSubSet">
-                            <div class="grade" id="grade1" onclick="selectGrade(this, 1)"> <p>파릇파릇 프레시한</p> <p>1학년!</p> </div>
-                            <div class="grade" id="grade2" onclick="selectGrade(this, 2)"> <p>아직은 놀고싶은</p> <p>2학년!</p> </div>
+                            <div class="grade" id="grade1" onclick="selectGrade(this, 1)"><p>파릇파릇 프레시한</p>
+                                <p>1학년!</p></div>
+                            <div class="grade" id="grade2" onclick="selectGrade(this, 2)"><p>아직은 놀고싶은</p>
+                                <p>2학년!</p></div>
                         </div>
                         <div class="gradeSubSet">
-                            <div class="grade" id="grade3" onclick="selectGrade(this, 3)"> <p>아직은 놀아도 되는(?)</p> <p>3학년!</p> </div>
-                            <div class="grade" id="grade4" onclick="selectGrade(this, 4)"> <p>마음만은 프레시한</p> <p>4학년!</p> </div>
+                            <div class="grade" id="grade3" onclick="selectGrade(this, 3)"><p>아직은 놀아도 되는(?)</p>
+                                <p>3학년!</p></div>
+                            <div class="grade" id="grade4" onclick="selectGrade(this, 4)"><p>마음만은 프레시한</p>
+                                <p>4학년!</p></div>
                         </div>
                     </div>
                     <input type="hidden" id="inputGrade" name="user-grade" value="">
@@ -68,52 +72,54 @@
                     <div class="question">
                         부전공, 복수전공을 하시나요?
                     </div>
-                    <div class="subQuestion">
-                        부전공
-                        <select name="minor">
-                            <option>해당없음</option>
-                            <option>컴퓨터공학</option>
-                            <option>소프트웨어공학</option>
-                            <option>IT경영</option>
-                            <option>산업경영</option>
-                            <option>게임공학</option>
-                            <option>엔터테인먼트컴퓨팅</option>
-                            <option>기계공학</option>
-                            <option>기계설계공학</option>
-                            <option>메카트로닉스공학</option>
-                            <option>임베디드시스템</option>
-                            <option>산업디자인공학</option>
-                            <option>미디어디자인공학</option>
-                            <option>에너지·전기공학</option>
-                            <option>전자공학</option>
-                            <option>나노반도체공학</option>
-                            <option>신소재공학</option>
-                            <option>생명화학공학</option>
-                        </select>
-                    </div>
+                    <div class="selectSet">
+                        <label class="questionLabel">
+                            <div class="labelText">부전공</div>
+                            <select name="minor" class="departSelectBox">
+                                <option>해당없음</option>
+                                <option>컴퓨터공학</option>
+                                <option>소프트웨어공학</option>
+                                <option>IT경영</option>
+                                <option>산업경영</option>
+                                <option>게임공학</option>
+                                <option>엔터테인먼트컴퓨팅</option>
+                                <option>기계공학</option>
+                                <option>기계설계공학</option>
+                                <option>메카트로닉스공학</option>
+                                <option>임베디드시스템</option>
+                                <option>산업디자인공학</option>
+                                <option>미디어디자인공학</option>
+                                <option>에너지·전기공학</option>
+                                <option>전자공학</option>
+                                <option>나노반도체공학</option>
+                                <option>신소재공학</option>
+                                <option>생명화학공학</option>
+                            </select>
+                        </label>
 
-                    <div class="subQuestion">
-                        복수전공
-                        <select name="doubleMajor">
-                            <option>해당없음</option>
-                            <option>컴퓨터공학</option>
-                            <option>소프트웨어공학</option>
-                            <option>IT경영</option>
-                            <option>산업경영</option>
-                            <option>게임공학</option>
-                            <option>엔터테인먼트컴퓨팅</option>
-                            <option>기계공학</option>
-                            <option>기계설계공학</option>
-                            <option>메카트로닉스공학</option>
-                            <option>임베디드시스템</option>
-                            <option>산업디자인공학</option>
-                            <option>미디어디자인공학</option>
-                            <option>에너지·전기공학</option>
-                            <option>전자공학</option>
-                            <option>나노반도체공학</option>
-                            <option>신소재공학</option>
-                            <option>생명화학공학</option>
-                        </select>
+                        <label class="questionLabel">
+                            <div class="labelText">복수전공</div>
+                            <select name="doubleMajor" class="departSelectBox">
+                                <option>해당없음</option>
+                                <option>컴퓨터공학</option>
+                                <option>소프트웨어공학</option>
+                                <option>IT경영</option>
+                                <option>산업경영</option>
+                                <option>게임공학</option>
+                                <option>엔터테인먼트컴퓨팅</option>
+                                <option>기계공학</option>
+                                <option>기계설계공학</option>
+                                <option>메카트로닉스공학</option>
+                                <option>임베디드시스템</option>
+                                <option>산업디자인공학</option>
+                                <option>미디어디자인공학</option>
+                                <option>에너지·전기공학</option>
+                                <option>전자공학</option>
+                                <option>나노반도체공학</option>
+                                <option>신소재공학</option>
+                                <option>생명화학공학</option>
+                            </select>
+                        </label>
                     </div>
                 </div>
                 <div class="swiper-slide">
