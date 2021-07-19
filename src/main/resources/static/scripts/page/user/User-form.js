@@ -4,6 +4,7 @@ var mySwiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    touchRatio:0,
 
 // 현재 페이지를 나타내는 점이 생깁니다. 클릭하면 이동합니다.
     pagination: {

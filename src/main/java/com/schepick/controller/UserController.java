@@ -30,6 +30,6 @@ public class UserController {
     public String createUser(User form) {
         userService.join(form);
         userService.findOne();
-        return "/page/unable-time/Unable-time";
+        return "redirect:/page/unable-time";
     }
 }
