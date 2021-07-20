@@ -1,6 +1,6 @@
 var schedule = new Array(14);
 for (var i = 0; i < 14; i++) {
-    schedule[i] = new Array(5);
+    schedule[i] = [0,0,0,0,0];
 }
 
 function tableClick(element, period, week) {

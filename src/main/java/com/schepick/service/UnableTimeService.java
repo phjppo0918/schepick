@@ -23,10 +23,10 @@ public class UnableTimeService {
         short pivot = 0;
         for (byte period = 0; period < 14; period++) {
             for (byte week = 0; week < 5; week++) {
-                if (strSplit[pivot].length() == 1 &&
-                        strSplit[pivot].charAt(0) == '1') {
+                if (strSplit[pivot].charAt(0) == '1') {
                     unableTimeRepository.save(new UnableTime(period, week));
                 }
+                pivot++;
             }
         }
     }
