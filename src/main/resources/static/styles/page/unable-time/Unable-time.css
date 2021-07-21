@@ -38,6 +38,17 @@
     justify-content: center;
     padding-top: 35px;
 }
+.scrollSet::-webkit-scrollbar {
+    width: 10px;
+}
+.scrollSet::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: var(--color-dark);
+}
+.scrollSet::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: var(--color-middle);
+}
 
 .scheduleTableRow {
     display: block;
@@ -92,4 +103,14 @@
     color: var(--color-light);
     background-color: var(--color-dark);
     border-color: var(--color-dark);
+}
+.tableWrap {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: 360px;
+    overflow-y: scroll;
+
 }
