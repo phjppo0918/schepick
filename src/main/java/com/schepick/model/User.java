@@ -10,6 +10,7 @@ public class User {
     private byte grade;
     private String minor;
     private String doubleMajor;
+    private String convergenceMajor;
     private boolean isCosmos;
 
 }
